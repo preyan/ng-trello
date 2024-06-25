@@ -1,6 +1,7 @@
 import { SupabaseClient, createClient } from '@supabase/supabase-js';
 
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import { environment } from './../../../src/environments/environment';
 
 export const BOARDS_TABLE = 'boards';
@@ -143,5 +144,25 @@ export class DatabaseService {
     } else {
       return null;
     }
+  }
+
+  getTableChanges() {
+    const changes = new Subject();
+
+    this.supabase
+      .from(CARDS_TABLE)
+      .on('*', (payload: any) => {
+        changes.next(payload);
+      })
+      .subscribe();
+
+    this.supabase
+      .from(LISTS_TABLE)
+      .on('*', (payload: any) => {
+        changes.next(payload);
+      })
+      .subscribe();
+
+    return changes.asObservable();
   }
 }
