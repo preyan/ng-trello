@@ -1,27 +1,50 @@
-# NgTrello
+# NG-Trello 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+![Angular Version](https://img.shields.io/badge/angular-18.0.5-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## Development server
+NG-Trello is a dynamic, web-based project management tool inspired by Trello. It allows users to organize projects into boards, lists, and cards for better productivity and collaboration. Built with Angular, this application showcases real-time data manipulation and a sleek, user-friendly interface.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features ✨
 
-## Code scaffolding
+- **User Authentication**: Secure login and registration functionality.
+- **Board Management**: Create, update, and delete boards to organize your projects.
+- **Real-time Collaboration**: Changes made by users are reflected in real-time across all clients.
+- **Responsive Design**: A beautiful, responsive layout that works on desktops, tablets, and mobiles.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started 🚀
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js
+- Angular CLI
+- PNPM
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
 
-## Running end-to-end tests
+```sh
+git clone https://github.com/yourusername/ng-trello.git
+cd ng-trello
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Install the dependencies:
 
-## Further help
+```sh
+pnpm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. Start the development server:
+
+```sh
+ng serve
+```
+
+Navigate to `http://localhost:4200/` to view the application.
+
+## License 📝
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+Made with ❤️ by [Preyan](https://github.com/preyan)
