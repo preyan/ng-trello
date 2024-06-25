@@ -46,5 +46,3 @@ Navigate to `http://localhost:4200/` to view the application.
 ## License 📝
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-Made with ❤️ by [Preyan](https://github.com/preyan)
